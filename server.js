@@ -1,5 +1,6 @@
 import http from 'http';
 import api from './api/api.js'
+import databes from './api/config/databes.js';
 
 
 const port = 3000
@@ -19,4 +20,6 @@ server.on('error', (error) =>{
 
 
 server.listen(port)
+databes()
+
  
